@@ -11,4 +11,4 @@ If you're going to be tinkering with the code I apologise in advance, this thing
 
 No support for this code is provided. Seriously, none. I wrote this without the intention of future development, but you can feel free to adjust it/modify it/update it/destroy it for whatever you like. Just don't be an asshole. If you make any money from it, I'd like some of it. Simples!
 
-![](img/extra/example_dojo.png)
+![Example dojo](img/extra/example_dojo.png?raw=true)
