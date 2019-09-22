@@ -1,0 +1,601 @@
+
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <!-- Basic declarations -->
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" 	content="ie=edge" />
+	<meta name="viewport" 				content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<title>Warframe Dojo Planner</title>
+
+  <!-- HTML5 Shiv for IE -->
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+
+  <!-- FontAwesome CSS -->
+	<link rel="stylesheet"
+		  type="text/css"  
+		  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
+		  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
+		  crossorigin="anonymous" />
+
+  <!-- Bootstrap core CSS -->
+	<link rel="stylesheet"
+		  type="text/css"  
+		  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+		  integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" 
+		  crossorigin="anonymous" />
+
+  <!-- Spectrum color picker -->
+	<link rel="stylesheet" 
+		  type="text/css" 
+		  href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.css"
+		  integrity="sha384-gS5ys5dB3Arb8KguiPM0STN1Nvqd9ndJsricVclJLORUi3rLtVW4J32dHsNEk+W7"
+		  crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+	<link rel="stylesheet"
+		  type="text/css" 
+		  href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" />
+
+  <!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css?version=20171126a" />
+
+  <!-- Favicons and app icons -->
+	<!-- Generics -->
+	<link rel="icon" 	sizes="228x228" 	href="img/favicons/img-5514c5b12a259adb5c9b34026cbded19.png" 	type="image/png" 	/>
+	<link rel="icon" 	sizes="128x128" 	href="img/favicons/img-e7e6a909502965126c5b5767cd52ba0e.png" 	type="image/png" 	/>
+	<link rel="icon" 	sizes="96x96" 		href="img/favicons/img-1bb2bb4857122dcb95b35d046fd3e379.png" 	type="image/png" 	/>
+	<link rel="icon" 	sizes="76x76" 		href="img/favicons/img-f0864dbe5b1da803816727db738c2106.png" 	type="image/png" 	/>
+	<link rel="icon" 	sizes="64x64" 		href="img/favicons/img-861b1c386ae8102d2166b5f4fd0c9b7f.png" 	type="image/png" 	/>
+	<link rel="icon" 	sizes="57x57" 		href="img/favicons/img-67858b951d7226d3fc865c35b3743b7d.png" 	type="image/png" 	/>
+	<link rel="icon" 	sizes="32x32" 		href="img/favicons/img-167f543a2b6e3f02a6ca8ef2efd49275.png" 	type="image/png" 	/>
+	<link rel="icon" 	sizes="16x16" 		href="img/favicons/img-0a16fa0561c5dbe4202a0b2176214df7.png" 	type="image/png" 	/>
+
+	<!-- Android -->
+	<link rel="shortcut icon" 		sizes="196x196" 	href="img/favicons/img-8e44ce5c70c3b3288139a9bc97a5699a.png" />
+
+	<!-- iOS -->
+	<link rel="apple-touch-icon" 	sizes="180x180"		href="img/favicons/img-9a094e8ab6f4b5ac0e3921e6855b885c.png" />
+	<link rel="apple-touch-icon" 	sizes="167x167" 	href="img/favicons/img-93365054fcf2bb04a46a8a4751d63f20.png" />  
+	<link rel="apple-touch-icon" 	sizes="152x152"		href="img/favicons/img-39714c775f34bd8a50bfdceb2229aae7.png" />
+	<link rel="apple-touch-icon"	sizes="120x120"		href="img/favicons/img-f047c909a76bbcfba8f7ee0a0d1e60e7.png" />
+
+	<!-- Windows 8 IE 10-->
+	<meta name="msapplication-TileColor" 				content="#424a50" />
+	<meta name="msapplication-TileImage" 				content="img/favicons/img-18694bd62358e67ce9519de283b08552.png" />
+	<meta name="msapplication-navbutton-color" 			content="#424a50" />
+
+  <!-- Mobile/desktop app -->
+  	<meta name="mobile-web-app-capable" 				content="yes" />
+	<meta name="apple-mobile-web-app-capable" 			content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" 	content="black-translucent" />
+	<meta name="theme-color" 							content="#424a50" />
+
+  <!-- Favicon -->
+	<link rel="shortcut icon" href="img/favicons/img-861b1c386ae8102d2166b5f4fd0c9b7f.png" />
+
+</head>
+<!-- <neck></neck> -->
+<body class="h-100 pt-5">
+
+<!-- Navbar -->
+  	<nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark">
+  		<a class="navbar-brand" href="#">
+  			<img class="img-fluid" height="42" width="42" src="img/logos/logo_white_256.png" alt="Warframe Dojo Planner" />
+  			<span class="d-none d-lg-inline-block">Warframe Dojo Planner</span>
+  		</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+  			<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="navbarCollapse">
+  			<!-- Left side buttons | Load, save, info, zoom, grid toggle-->
+			<div class="form-inline">
+				<div class="btn-group mx-1" role="group" 
+							aria-label="Load and save your canvas"
+							data-placement="bottom" 
+							title="Load and save your canvas">
+					<button class="btn btn-warning" 
+							data-toggle="modal" 
+							data-target="#modal_load" 
+							id="gui_btn_modal_load">
+						<i class="fa fa-folder-o"></i> 
+						Load
+					</button>
+
+					<button class="btn btn-info" 
+							data-toggle="modal" 
+							data-target="#modal_save" 
+							id="gui_btn_modal_save">
+						<i class="fa fa-floppy-o"></i> 
+						Save
+					</button>
+				</div>
+
+				<button class="btn btn-light mx-1" 
+						data-toggle="modal" 
+						data-target="#modal_instructions" 
+						id="gui_btn_modal_instructions"
+						data-placement="bottom" 
+						title="Show the instructions">
+					<i class="fa fa-info-circle"></i>
+  					<span class="sr-only">Instructions</span>
+				</button>
+
+				<div class="btn-group mx-1" role="group" aria-label="Zoom control">
+  					<button class="btn btn-primary" id="gui_btn_zoom_out" data-toggle="tooltip" data-placement="bottom" title="Zoom out">
+  						<i class="fa fa-search-minus"></i>
+  						<span class="sr-only">Zoom out</span>
+  					</button>
+  					<button class="btn btn-primary" id="gui_btn_zoom_in" data-toggle="tooltip" data-placement="bottom" title="Zoom in">
+  						<i class="fa fa-search-plus"></i>
+  						<span class="sr-only">Zoom in</span>
+  					</button>
+  				</div>
+
+				<button class="btn btn-primary mx-1" 
+						id="gui_btn_grid_toggle" 
+						data-placement="bottom" 
+						title="Toggle the background grid">
+					<i class="fa fa-plus-square-o"></i>
+						 <span class="sr-only">Toggle grid</span>
+				</button>
+			</div>
+
+			<!-- Dojo power & capacity stats -->
+			<div class="mx-auto">
+				<div class="alert alert-light py-1 px-3 my-0 text-dark" role="alert">
+					<span data-toggle="tooltip" data-placement="bottom" title="Room count" id="room_count_wrapper">
+						<span id="room_count">0</span><i class="fa fa-home mr-3 ml-1"></i>
+					</span>
+					<span data-toggle="tooltip" data-placement="bottom" title="Power level" id="power_count_wrapper">
+						<span id="power_count">0</span><i class="fa fa-bolt mr-3 ml-1"></i> 
+					</span>
+					<span data-toggle="tooltip" data-placement="bottom" title="Capacity" id="capacity_count_wrapper">
+						<span id="capacity_count">0</span><i class="fa fa-user-o ml-1"></i>
+					</span>
+				</div>
+			</div>
+
+  			<!-- Right Toolbar | Rooms, images, icons, text, color picker -->
+  			<ul class="navbar-nav" id="top_nav">
+				<span class="form-inline">
+					<span class="btn-group dropdown mx-1" role="group" aria-label="Add canvas objects">
+						<span data-placement="bottom" title="Change the color of the active element">
+							<input type="color" id="input_color" />
+						</span>
+
+						<button class="btn btn-primary"
+							data-toggle="modal" 
+							data-target="#modal_import_image" 
+							id="gui_btn_modal_import_image"
+							data-placement="bottom" 
+							title="Import an image">
+								<i class="fa fa-image"></i> 
+								<span class="sr-only">Import image</span>
+						</button>
+
+						<button class="btn btn-primary"
+							id="gui_btn_add_text"
+							data-placement="bottom" 
+							title="Insert some text">
+								<i class="fa fa-font"></i> 
+								<span class="sr-only">Add text label</span>
+						</button>
+
+						<button class="btn btn-primary dropdown-toggle" 
+								type="button" 
+								id="gui_btn_add_icon" 
+								data-toggle="dropdown" 
+								aria-haspopup="true" 
+								aria-expanded="false"
+								data-placement="bottom" 
+								title="Insert a marker">
+    						<i class="fa fa-font-awesome"></i>
+  						</button>
+						<span class="dropdown-menu dropdown-menu-right dropdown-menu-compact" aria-labelledby="gui_btn_add_icon" id="top_nav_cat_markers">
+							<!-- Markers are automatically inserted here according to those listed in js/icons.js -->
+						</span>
+					</span>
+				</span>
+
+  				<!-- Additional links are generated here according to values found in js/tiles.js -->
+  			</ul>
+  		</div>
+  	</nav>
+
+<!-- Main content area -->
+  	<main class="h-100 pt-2">
+  		<div class="h-100 container-fluid">
+  			<div class="h-100 row">
+  				<div class="col-12 pb-2 px-0" id="dojo_canvas_parent">
+  					<canvas id="dojo_canvas" class="h-100 w-100 grid"></canvas>
+  				</div>
+  			</div>
+  		</div>
+  	</main>
+
+<!-- Footer -->
+  	<footer class="pl-3 pt-3 pr-2 pb-2 text-right">
+  		<a href="https://www.stom66.co.uk/" target="_blank" title="Built for the Cat-Butt Hooligans">
+  			<img src="img/logos/cbh.png" height="42" width="42" class="img-fluid" alt="Cat-Butt Hooligans" /></a>
+  	</footer>
+
+  <!-- Instructions modal -->
+  	<div class="modal fade" id="modal_instructions" tabindex="-1" role="dialog" aria-labelledby="modal_instructions_label" aria-hidden="true">
+  		<div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0" role="document">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<h5 class="modal-title" id="modal_instructions_label">How to use the Dojo Planner</h5>
+  					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  						<span aria-hidden="true">&times;</span>
+  					</button>
+  				</div>
+  				<div class="modal-body">
+		  			<p>
+		  				Add new tiles from the dropdown menus at the top right 
+		  				<i class="fa fa-hand-o-right" aria-hidden="true" style="transform: rotate(-30deg)"></i>
+		  			</p>
+  					<p class="pl-md-5">
+  						<i class="mr-3 mb-3 fa fa-hand-rock-o" aria-hidden="true"></i>
+						<b>Pan</b> with <kbd>Middle Click</kbd> + <kbd>Drag</kbd>
+
+  						<br />
+  						<i class="mr-3 mb-3 fa fa-search-plus" aria-hidden="true"></i>
+  						<b>Zoom</b> with <kbd>Scroll</kbd>
+  					</p>
+
+  					<p class="pl-md-5">
+  						<i class="mr-3 mb-3 fa fa-mouse-pointer" aria-hidden="true"></i>
+  						<b>Select a tile</b> with <kbd>Left Click</kbd>
+  						<br />
+
+  						<i class="mr-3 mb-3 fa fa-arrows" aria-hidden="true"></i>
+  						<b>Move a tile</b> with <kbd>Drag</kbd> or 
+						<kbd>
+							<i class="fa fa-arrow-down" aria-hidden="true"></i>
+							<i class="fa fa-arrow-up" aria-hidden="true"></i>
+							<i class="fa fa-arrow-left" aria-hidden="true"></i>
+							<i class="fa fa-arrow-right" aria-hidden="true"></i>
+						</kbd>
+  						
+  						<br />
+  						<i class="mr-3 mb-3 fa fa-trash-o" aria-hidden="true"></i>
+  						<b>Delete a tile</b> with <kbd>Right Click</kbd> or <kbd>D</kbd>
+  						
+  						<br />
+  						<i class="mr-3 mb-3 fa fa-repeat" aria-hidden="true"></i>
+  						<b>Rotate a tile</b> with <kbd>R</kbd> or its blue node <span class="instructions_blue_node"></span>
+
+  						<br />
+  						<i class="mr-3 mb-3 fa fa-clone" aria-hidden="true"></i>
+  						<b>Clone a tile</b> with <kbd>C</kbd>
+  					</p>
+  				</div>
+  				<div class="modal-footer">
+  					<button type="button" class="btn btn-warning mr-auto" 
+  							data-dismiss="modal" 
+							data-toggle="modal" 
+							data-target="#modal_about" >About this tool</button>
+  					<button type="button" class="btn btn-primary" data-dismiss="modal">Got it!</button>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+<!-- Save modal -->
+  	<div class="modal fade" id="modal_save" tabindex="-1" role="dialog" aria-labelledby="modal_save_label" aria-hidden="true">
+  		<div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0" role="document">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<h5 class="modal-title" id="modal_save_label">Save Your Dojo</h5>
+  					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  						<span aria-hidden="true">&times;</span>
+  					</button>
+  				</div>
+  				<div class="modal-body">
+  					<p>
+  						<b>Save your SVG</b> by clicking this download button. SVGs are vector images that can be edited with most modern 
+  						editors, such as GIMP, however you cannot load them back into the Planner for editing.
+  					</p>
+
+					<div class="btn-group btn-block mx-1 mb-3" role="group" aria-label="Save image">
+	  					<a href="#" class="btn btn-primary btn-lg btn-block" id="gui_btn_download_svg" download>
+	  						SVG
+	  					</a>
+						<span class="input-group-addon px-5">
+							Download
+	  						<i class="fa fa-floppy-o ml-2"></i>
+						</span>
+	  					<a href="#" class="btn btn-primary btn-lg btn-block" id="gui_btn_download_png" download>
+	  						PNG
+	  					</a>
+	  				</div>
+
+  					<h5 class="text-center">- or -</h5>
+
+  					<p>
+  						<b>Save your JSON</b> by copying everything in the textarea and putting it on Pastebin, or download it to your computer. <b>This method is best if you wish to edit the canvas later.</b>
+  					</p>
+
+  					<textarea id="textarea_data" readonly></textarea>
+
+					<div class="btn-group mx-1 mb-3" role="group" aria-label="Save JSON Data">
+	  					<a href="#" class="btn btn-primary btn-lg" id="gui_btn_download_json" download>
+	  						Save JSON
+	  						<i class="fa fa-database ml-2"></i>
+	  					</a>
+	  					<button class="btn btn-primary btn-lg" id="gui_btn_copy_data">  
+  							Copy
+  						</button>
+	  				</div>
+
+  					<a class="btn btn-secondary btn-lg pull-right" href="https://pastebin.com/" target="_blank">
+  						Pastebin
+  						<i class="fa fa-external-link"></i>  
+  					</a>
+  				</div>
+  				<div class="modal-footer">
+  					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+<!-- Load modal -->
+  	<div class="modal fade" id="modal_load" tabindex="-1" role="dialog" aria-labelledby="modal_load_label" aria-hidden="true">
+  		<div class="modal-dialog" role="document">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<h5 class="modal-title" id="modal_load_label">Load Your Dojo</h5>
+  					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  						<span aria-hidden="true">&times;</span>
+  					</button>
+  				</div>
+  				<div class="modal-body">
+  					<p>
+  						<b>1) Upload a JSON file</b>
+  					</p>
+
+					<div class="input-group mb-3 w-100">
+						<label class="w-100">
+							<input type="file" aria-describedby="aria_json_label" id="input_json_file" accept=".json" class="w-100">
+							<span class="custom-file-control form-control-file" id="aria_json_label">Choose a JSON file</span>
+						</label>
+					</div>
+
+  					<h5 class="text-center">- or -</h5>
+
+  					<p>
+  						<b>2) Enter the raw JSON</b>
+  					</p>
+
+  					<div class="pb-3">
+  						<button class="btn btn-sm btn-secondary pull-right" id="gui_btn_clear_data_input">
+  							<i class="fa fa-trash mr-1"></i>
+  						</button>
+  						<textarea id="textarea_data_input"></textarea>
+  					</div>
+
+  					<h5 class="text-center">- or -</h5>
+
+  					<p>
+  						<b>3) Load a Pastebin URL (experimental!)</b>
+  					</p>
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="PasteBin link" aria-label="Import PasteBin Save" id="input_pastebin">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" id="gui_btn_pastebin">Import</button>
+						</span>
+					</div>
+
+  					<p class="text-muted">This feature can fail for a number of reasons. It doesn't seem to happen to Pastebin Pro users or the creator of the paste.</p>
+
+					<div class="alert alert-success hide fade" id="output_p_link">
+						<a href="#" target="_blank"></a>
+						<span></span>
+					</div>
+  				</div>
+  				<div class="modal-footer">
+  					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  					<button type="button" class="btn btn-primary" id="gui_btn_load_data">Load data</button>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+<!-- Import image modal -->
+  	<div class="modal fade" id="modal_import_image" tabindex="-1" role="dialog" aria-labelledby="modal_import_image_label" aria-hidden="true">
+  		<div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0" role="document">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<h5 class="modal-title" id="modal_import_image_label">Import an image</h5>
+  					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  						<span aria-hidden="true">&times;</span>
+  					</button>
+  				</div>
+  				<div class="modal-body">
+  					<p>
+  						<b>1) Upload an image</b>
+  					</p>
+
+					<div class="input-group mb-3 w-100">
+						<label class="w-100">
+							<input type="file" aria-describedby="aria_input_image_label" id="input_image_file" accept="image/*" class="w-100">
+							<span class="custom-file-control form-control-file" id="aria_input_image_label">Choose an image</span>
+						</label>
+					</div>
+
+  					<h5 class="text-center">- or -</h5>
+
+  					<p>
+  						<b>2) Load image from URL</b>
+  					</p>
+
+					<div class="input-group mb-3">
+						<input type="text" class="form-control" placeholder="Image URL" aria-label="Import image from URL" id="input_image_url">
+						<span class="input-group-btn">
+							<button class="btn btn-default" type="button" id="gui_btn_import_image">Import</button>
+						</span>
+					</div>
+  				</div>
+  				<div class="modal-footer">
+  					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+  <!-- About modal -->
+  	<div class="modal fade" id="modal_about" tabindex="-1" role="dialog" aria-labelledby="modal_about_label" aria-hidden="true">
+  		<div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0" role="document">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<h5 class="modal-title" id="modal_about_label">About the app</h5>
+  					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  						<span aria-hidden="true">&times;</span>
+  					</button>
+  				</div>
+  				<div class="modal-body">
+		  			<p>
+		  				This app was written by <a href="https://www.stom66.co.uk/" target="_blank">stom</a> 
+		  				because the other Warframe dojo planners appeared to be broken, or missing tiles.
+					</p>
+
+					<p>
+						It's not a perfect attempt, but it'll do for most situations. If something is broken 
+						or you have a reasonable suggestion let me know through my site (linked above).
+		  			</p>
+
+  					<p>
+  						<a href="https://paypal.me/pools/c/7ZExJjwbzp" class="btn btn-info pull-right" target="_blank">Leave a tip</a>
+  						If you want to buy me a coffee as thanks or help with the hosting costs then please leave a tip &gt;
+  					</p>
+
+		  			<p>
+		  				App details:
+		  			</p>
+
+	  				<ul>
+	  					<li>Uses jQuery and Fabric.js for the main grunt work</li>
+	  					<li>Bootstrap for the layout</li>
+	  					<li>Icons are taken from the FontAwesome SVG font files</li>
+	  					<li>Dojo tiles were created by Brooke as SVGs in Inkscape</li>
+	  				</ul>
+
+	  				<p>A standalone copy of the tool can be downloaded here: <a hjref="Warframe_Dojo_Planner.20171128a.zip" download>Warframe_Dojo_Planner.20171128a.zip</a>.
+  				</div>
+  				<div class="modal-footer">
+  					<button type="button" class="btn btn-secondary" data-dismiss="modal">Got it!</button>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+<!-- Load the Javascript -->
+  <!-- Load jQuery 3.2.1 from CDN -->
+  	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+			integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f"
+			crossorigin="anonymous"></script>
+
+  <!-- Load Popper.js 1.12.3 (UMD) from CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" 
+			integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" 
+			crossorigin="anonymous"></script>
+
+  <!-- Load Bootstrap 4.0.0-beta.2 from CDN -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" 
+			integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" 
+			crossorigin="anonymous"></script>
+
+  <!-- Load fabric.js 2.0.0-rc-1 from CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/2.0.0-rc.1/fabric.min.js" 
+			integrity="sha384-pFKuznyfbYubcXrHwkMzH4/Iwja7/IVwRvjMBAp8EumSC0b/ERIDaf7SvwdFLmhN" 
+			crossorigin="anonymous"></script>
+
+  <!-- Load Spectrum 1.8.0 from CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.0/spectrum.min.js"
+			integrity="sha384-Uh/8a0iyk8ZUsfG3mwPi2VLwe62eIA2qgpHghB19z0RPx/AZ6MxHvNTRuCfKwn7H"
+			crossorigin="anonymous"></script>
+
+  <!-- Load tiles data -->
+	<script src="js/tiles.js?version=20171126a"></script>
+
+  <!-- Load list of embeddable FontAwesome icons -->
+	<script src="js/icons.js?version=20171126a"></script>
+
+  <!-- Load the main dojo_planner app -->
+	<script src="js/app.js?version=20171126a"></script>
+	
+  <!-- Load Clem
+		....................................................................................................
+		....................................................................................................
+		....`/+++++++++++++++++++++++++++++++++++++++++++++osyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy-.....
+		...../+/+/++/++++/++++++++++++++++/+++++/++/+++++++oyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy-.....
+		...../++/++/+++++/+/++++++++++++/+++++/+/++++++++++oyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy-.....
+		...../+++++++++++++++++++++++++++++++++++++++++++++oyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy-.....
+		...../+++++++++++++++++++++++++++++++++++++++++++++oyyyyyyyyyyyyyyyyyyyyyyyyyysoo+..-:/osyyyyy-.....
+		...../++++++++++++++++++++++++++++++++++++++/::-...-://+ossyyyyyyyyyyyyyyyyyo:-:/+./-ooosyyyyy-.....
+		...../+++++++++++++++++++++++++++++++++/-.`              ``..:/+syyyyyyyyyso./syyysysyyyhhyyyy-.....
+		...../++++++++++++++++++++++++++++++/-`                         `-+yyyyysoooosysso/::syyymdydy-.....
+		...../+++++++++++++++++++++++++++/-`                              .+osyyyyyyy//+//+ooyyyhmmmmh-.....
+		...../++++++++++++++++++++++++++:`                                 `-/osmdddhyyyyys/-ohdhmmmmh-.....
+		...../++++++++++++++++++++++++/.                             ````     .:ydmmmmmmdhhysyyhyydmmm:.....
+		...../+++++++++++++++++++++++:`                          `/syhddhs/`   `+sydmmmmmmmmdhhyyyyhhd:.....
+		...../++++++++++++++++++++++-                           :hmmmdddhhmho/+ooo/+ddmmmmmmmmmmmmdhhh:.....
+		...../+++++++++++++++++++++:                           `hmmds+/+-odmy../hdsoosdmmmmmmmmmmmmmmm:.....
+		...../++++++++++++++++++++/`                           `omms/....-ymy`-ymmdyysydmmmmmmmmmmmmmm:.....
+		...../++++++++++++++++++++-                             .smdo...-+dms`-ymmmddyyymmmmmmmmmmmmmm:.....
+		...../++++++++++++++++++++`                              `+ddhhhdmmy-`.+dmmmmmddmmmmmmmmmmmmmm:.....
+		...../+++++++++++++++++++:                                .+hdmmhs/.``./dmmmmmmmmmmmmmmmmmmmmm:.....
+		...../+++++++++++++++++++:                ` `````....` ./yys+oss:.`.../hmmmmmmmmmmmmmmmmmmmmmm:.....
+		...../+++++++++++++++++++-           `.:/-.``......../oysoo+++yh:....-smmmmmmmmmmmmmmmmmmmmmmm:.....
+		...../+++++++++++++++++++: ````````-ohdmmdho-.....-oyyo+++++++yd:....+hmmmmmmmmmmmmmmmmmmmmmdd:.....
+		...../++++++++++++++++++++.`....../dmmmdddmmh/..:ohyo+++++++++sd/....+dmmmmmmmmmmmmmmmmmmmmdyy-.....
+		...../++++++++++++++++++++/.......smmds/-:sdmdsshso+++++++++++ohh:...ommmmmmmmmmmmmmmmmmmdyyyy-.....
+		...../+++++++++++++++++++++/-....-ymmo.`  -smmmyooosoo+++++++++oho...smmmmmmmmmmmmmmmmmmhyyddy-.....
+		...../+++++++++++++++++++++++/....ommh+-.-+ymmdyyhmmddyo++++++++oh/-.ommmmmmmmmmmmmmmmmdddmmdy-.....
+		...../++++++++++++++++++++++++:...:hdmdhhddmdo::sssyhdmdy+++++++oddhsodmmmmmmmmmmmmmmmmmmmmhyy-.....
+		...../+++++++++++++++++++++++++:..:osssyhhs+-//++++++oshyoo++oosymmmmmmmmmmmmmmmmmmmmmmmmdyyyh:.....
+		.....+so+++++++++++++++++++++++o/oysyhys//^-:+oshhyysoooosyhhddmmmmmmmmmmmmmmmmmmmmmmmmddddhhd:.....
+		.....ymdyo++++++++++++++++++++++shdmdddmdhyyyddmmmmmmdhs++ymmmmmmmmmmmmmmmmmmmmmmmmmddmmdddddm:.....
+		.....ymmmds++++++++++++++++++++++smdoosdmmmmmmmmmmmmmmddyosmmmmmmmmmmmmmmmmmmmmmmmmmmdhhyyyyyd:.....
+		.....ymmmmdo++++++++++++++++++oosymdssshmmmmmmmmmmmmmmmmmddmmmmmmmmmmmmmmmmmmmmmmmmdhyyyyyyhhm:.....
+		.....ymmmmms++++++++++++++:oooyydmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmddyyyyyyyhmmm:.....
+		.....ymmmmmy++++++++++++::+dhyyyhmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmhyyyyyyyhmmmm:.....
+		.....ymmmmmdso+++++++++-/sdmyhdhhhhddmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmdyhhydddmmmmm:.....
+		.....ymmmmmmmdhysooooo::shdhyhyyyyhhhhyydmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmddmmmmmmmmmmm:.....
+		.....smmddmmmmmmdyyddy..+yyyyyyyyhyyyysooyhhmdyyyyyyyysyhhddmmmmmmmmmmmmmmdmmmmhyyhmmmmmmmmmmm:.....
+		.....syhmmmmdmmdyhmmmo./yyyyyyyyyyyys+.` `-shddhyyyyyyyyyyyyyyhhhhhhhhdmdhyhdddyyyyhmmmmmmmmmm:.....
+		.....shymmmddmmyydmmmo+dhyyyydhyysoo/.   `:syyyddddhhyyyyyyyyyyyyyyydddyyyyhhhhhhdmmmmmmmmmmmm:.....
+		.....ydymmmhmmmhymmmmshhdhyyhhys//++-    `.oyyyyosyhhddhhhyyyyyyyyyyyyyyyyyyydmmmmmmmmmmmmmmmm:.....
+		.....ymhmmddmmmdymmmmydddyyyyyo-../+`     `-///-.-/syyyyhddddhhhyyyyyyyyhhyyyydmmmmmmmmmmmmmmm:.....
+		.....oddmmmmmmmmhmmmmhdmmdyysys/.../-         ``-ososyyyyyyyhhhhhhhhhhyyyhhhdddmmmmmmmmmmmmmmm:.....
+		.....+hmmmmmmmmmmmmmmmmmmdys/.oy+../+:`         .oyyyyyyyyyyyyyso+oosyhhdhddmmmmmmmmmmmmmmmmmm:.....
+		.....+dmmmmmmmmmmmmmmmmmyhy+:-./h+/+++/:-        ./syyyyso/:::+yyssssssyyyyyhhhhddmmmmmmmmmmmm:.....
+		.....+dmmmmmmmmmmmmmmmmdyhhyys-.+yo++++/-        `.-/+/:-.....:yyyyyyyyyyyyyyyyssyyyyyhhddmmmm:.....
+		.....odmmmmmmmmmmmmmmmmmhmdyyyoosys++:.`       `.:+/-....-:/+osyyyyyyyyyyyyyyyyoooooo+oosyyhhd:.....
+		.....smmmmmmmmmmmmmmmmmmmmdddmdddmdhyssssssssssshhhhhhyyhddddddddddddddhhddddddddddddhdddddddd:.....
+		.....smmmmmmmddhysssyhdmmmmmmdsssssdmmmmmmmmmmmyssssssssssssssdmmsssssssymmmmmmmmmysssssshmmmm:.....
+		.....ymmmmmh+:........-/sdmmmh.....hmmmmmmmmmmm-..............ymd........hmmmmmmmy.......+mmmm:.....
+		.....ymmmmo.....://:.....:hmmh.....hmmmmmmmmmmm-....-/////////hmd........+mmmmmmm/.......+mmmm:.....
+		.....ymmmh.....ymmmmh.....+mmh.....hmmmmmmmmmmm-....+mmmmmmmmmmmd.........hmmmmmy........+mmmm:.....
+		.....ymmmh.....dmmmmd:..../mmh.....hmmmmmmmmmmm-....+mmmmmmmmmmmd......`../mmmmm/........+mmmm:.....
+		.....ymmmh.....dmmmmmhyyyyhmmh.....hmmmmmmmmmmm-....+mmmmmmmmmmmd......``..hmmmh.........+mmmm:.....
+		.....ymmmh.....dmmmmmmmmmmmmmh.....hmmmmmmmmmmm-....-::::::ommmmd.....+..../mmm/`..:-....+mmmm:.....
+		.....ymmmh.....dmmmmmmmmmmmmmh.....hmmmmmmmmmmm-.........../mmmmd.....y+....hmy....h-....+mmmm:.....
+		.....ymmmh.....dmmmmmddddddmmh.....hmmmmmmmmmmm-..../yyyyyyhmmmmd.....yd-`..:d:`../m-....+mmmm:.....
+		.....ymmmh.....dmmmmd-..../mmh.....hmmmmmmmmmmm-....+mmmmmmmmmmmd.....yms....+....hm-....+mmmm:.....
+		.....ymmmh.....dmmmmd-..../mmh.....hmmmmmmmmmmm-....+mmmmmmmmmmmd.....ymm/.......+mm-....+mmmm:.....
+		.....ymmmd:....:syys/...`.smmh.....shhhhhhhhdmm-..../hhhhhhhhhdmd.....ymmh-.....-dmm-....+mmmm:.....
+		.....ymmmmd+-...........:ymmmh..............ymm-..............ymd.....ymmmo.....smmm-....+mmmm:.....
+		.....ymmmmmmdyo/::::/+shmmmmmh::::::::::::::ymm/::::::::::::::ymd:::::ymmmd/:::/mmmm/::::ommmm:.....
+		.....smmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:.....
+		.....:////////////////////////////////////////////////////////////////////////////////////////......
+		....................................................................................................
+		....................................................................................................
+	-->
+  </body>
+</html>

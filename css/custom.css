@@ -1,0 +1,120 @@
+/* General page styling */
+	html {
+		max-height: 100%;
+		overflow-y: hidden;
+	}
+	body {
+	    background-color: #434343;
+	    background-image:linear-gradient(#434343, #282828);
+	}
+	nav {
+		border-bottom: 3px #222;
+		border-bottom-style: dotted;
+	}
+	footer {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		opacity: 0.43;
+		border-radius: 20px 0 0 0;
+		background-color: #111;
+	}
+		footer img {
+			transition: all 0.8s ease-in-out;
+		}
+			footer:hover img {
+				transform: scale(1.1);
+			}
+
+/* Set the grid background style */
+	.grid {
+	    background-color: transparent;
+	    background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, .05) 25%, rgba(255, 255, 255, .05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, .05) 75%, rgba(255, 255, 255, .05) 76%, transparent 77%, transparent);
+	  	height:100%;
+	  	background-size:40px 40px;
+	}
+
+/* Style the navbar brand */
+	.navbar-brand {
+		font-family: "Open Sans Condensed";
+	}
+		.navbar-brand img {
+			margin: -10px 0;
+		}
+		.navbar-brand-text {
+			margin: -24px 0;
+			position: relative;
+			overflow: hidden;
+		}
+	
+/* Style for navbar compact dropdown */
+	.dropdown-menu-compact {
+		width: 20em;
+	}
+		.dropdown-menu-compact > a {
+			display:inline-block;
+			width: 20%;
+	}
+	.dropdown-menu a:focus, .dropdown-menu a:hover {
+		background: #ddd;
+	}
+
+/* Load & Save data textareas */
+	#textarea_data, #textarea_data_input {
+		border-radius: 5px;
+		display: block;
+		font-size: 0.7em;
+		margin-bottom: 6px;
+		max-height: 10em;
+		min-height: 6em;
+		overflow-y: scroll;
+		padding: 3px;
+		width: 100%;
+		word-wrap: break-word;
+	}
+		#textarea_data {
+			background: #222;
+			color: #aaa;
+			min-height: 4em;
+			height:4em;
+		}
+/* Clear textarea button offset */
+	#gui_btn_clear_data_input {
+		position:relative;
+		margin-bottom:-31px;
+		margin-right:20px;
+	}
+
+/* Styles for the color picker */
+	.sp-replacer {
+		border-radius: 4px;
+		height: 38px;
+		padding: 5px;
+		border: none;
+		border-radius: 5px 0 0 5px;
+		background-color: #007bff;
+	}
+		.sp-replacer:hover {
+			background-color: #0069d9;
+			border-color: #0062cc;
+		}
+		.sp-preview {
+			height: 100%;
+			width: 30px;
+			border-radius: 4px;
+			border: none;
+			margin-right: 0;
+		}
+			.sp-preview-inner {
+				border-radius:4px;
+			}
+		.sp-dd {
+			display:none;
+		}
+.instructions_blue_node {
+	width: 12px;
+	height: 12px;
+	border: 2px solid #4a6290;
+	border-radius: 2px;
+	display: inline-block;
+}

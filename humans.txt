@@ -1,0 +1,21 @@
+/* TEAM */
+	Coder: 			stom
+	Site: 			www.stom66.co.uk
+	Location: 		Edinburgh, UK
+
+	Artwork:		Brooke
+	Location: 		US
+
+	Complaining: 	Zero_Jinkei
+							
+/* THANKS */				
+	This project couldn't have been possible without learning from the difficulties of 
+	others, documented on StackExchange. To all those who struggled with fabric.js before 
+	me, I congratulate you. At times it was painful, but I had you to guide me through 
+	the struggle. You have my thanks.
+                  
+/* SITE */
+	Last update: 	2017/11/24
+	Standards: 		Loosely based on HTML5 & CSS3
+	Components: 	jQuery, Bootstrap, Fabric.js, Spectrum (color picker)
+	Software: 		Written with Sublime text, coffee, chain-smoking, and Oxford commas.

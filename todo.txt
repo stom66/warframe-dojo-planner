@@ -1,0 +1,48 @@
+ToDo
+------------------------------------------------
+[x] add a donate button
+[x] check everything has a label, title, etc
+[x] add R for rotate keypress, D for delete, any others?
+[x] add way to remove items
+[x] bind keyboard arrow keys to move piece by snap_size
+[x] clem
+[x] preload images
+[x] remove tooltips, add instructions popup
+[x] zoom on current cursor position
+
+Script tweaks
+------------------------------------------------
+[ ] auto save to local storage?
+[ ] optimise saving
+[?] needs more Clem
+[x] pad out Pastebin function, add notifications for failed load etc
+[x] load custom image
+[x] power usage
+[x] room counter
+
+New domain
+------------------------------------------------
+[x] ensure php7
+[x] add human.txt
+[x] add robots.txt
+[x] changed layout of the /img dir, make sure to adjust for new values in tiles.js and img links. *
+[x] ensure CDN links where posssible
+
+Bugs
+------------------------------------------------
+[x] tooltips stopped working
+[x] non-dojo objects losing resize handles on loading JSON save
+[x] look into new clone method: https://jsfiddle.net/5pnrpt6g/9/
+[x] cloned objects becoming resizeable
+[x] fontawesome icons dont export with SVG saves
+[x] look into allowing deletion of itext via !object.isEditing
+
+Final tweaks on launch:
+------------------------------------------------
+[x] add google analytics
+[ ] add redirect from old domain
+[ ] change Quickwords links
+[ ] minify the css 
+[ ] minify the js 
+[x] OG image for sharing
+[ ] remove resource links to stom66.co.uk
