@@ -1,5 +1,5 @@
 # Waframe Dojo Planner 
-### A simple app written with fabric.js
+### A simple webapp to help you plan your Dojo
 
 The Dojo Planner is available for use at: https://dojoplanner.stom66.co.uk
 
