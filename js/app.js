@@ -9,30 +9,32 @@
 // but it'll provide enough jumping off points, although admittedly I got distracted in
 // some places making Clem have a bit of fun.
 //
-// No support for this code is provided. Seriously, none. I wrote this without the 
+// No support for this code is provided. I wrote this without the 
 // intention of future development, but you can feel free to adjust it/modify it/update
 // it/destroy it for whatever you like. Just don't be an asshole. If you make any money 
 // from it, I'd like some of it. Simples!
+//
+// Thanks to GitHub user lukepot for providing the Novemeber 2019 changes.
 //
 // Written by stom@stom66.co.uk. 
 //
 // Weee! Off we go!
 //-----------------------------------------------------------------
 // Choose settings
-	var snap_size = 20,
+	var snap_size         = 20,
 		rotate_angle_snap = 22.5,
-		canvas_width = $("#dojo_canvas_parent").width(),
-		canvas_height = $("#dojo_canvas_parent").height(),
-		zoomLevel = 0,
-		zoomLevelMin = -7,
-		zoomLevelMax = 0,
-		panning = false,
-		clean_slate = true,
-		base_url = [location.protocol, '//', location.host, location.pathname].join(''),
-		room_count = 0,
-		power_count = 0,
-		capacity_count = 0,
-		pastebin_id = false;
+		canvas_width      = $("#dojo_canvas_parent").width(),
+		canvas_height     = $("#dojo_canvas_parent").height(),
+		zoomLevel         = 0,
+		zoomLevelMin      = -7,
+		zoomLevelMax      = 0,
+		panning           = false,
+		clean_slate       = true,
+		base_url          = [location.protocol, '//', location.host, location.pathname].join(''),
+		room_count        = 0,
+		power_count       = 0,
+		capacity_count    = 0,
+		pastebin_id       = false;
 
 // Work out the tile categories from previously included tiles.js
 	var categories = [];
@@ -93,10 +95,10 @@
         },
         'touch:drag': function(e) {
             if (pausePanning == false && undefined != e.e.layerX && undefined != e.e.layerY) {
-                currentX = e.e.layerX;
-                currentY = e.e.layerY;
-                xChange = currentX - lastX;
-                yChange = currentY - lastY;
+				currentX = e.e.layerX;
+				currentY = e.e.layerY;
+				xChange  = currentX - lastX;
+				yChange  = currentY - lastY;
 
                 if( (Math.abs(currentX - lastX) <= 50) && (Math.abs(currentY - lastY) <= 50)) {
                     var delta = new fabric.Point(xChange, yChange);

@@ -1,4 +1,4 @@
-	//	0 src 											1 category 				2 title						 width 			4 height 		5 cap 			6 power
+	//	0 src 										1 category 				2 title						 width 			4 height 		5 cap 			6 power
 var tiles = [
 	['img/tiles/clan-hall.svg',						'Clan Halls',			'Starter Hall',				400,			800,			100,			5],
 	['img/tiles/clan-hall-great.svg',				'Clan Halls',			'Great Hall',				400,			800,			200,			-2],
