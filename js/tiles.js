@@ -17,6 +17,7 @@ var tiles = [
 	['img/tiles/lab-oracle.svg',					'Lab',					'Oracle',					400,			400,			-2,				-5],
 	['img/tiles/lab-orokin.svg',					'Lab',					'Orokin',					400,			800,			-2,				-5],
 	['img/tiles/lab-tenno.svg',						'Lab',					'Tenno',					400,			400,			-2,				-5],
+	['img/tiles/lab-vent-kids.svg',					'Lab',					"Vent Kids' Bash Lab",		400,			400,			-2,				-5],
 	['img/tiles/utility-barracks.svg',				'Misc',					'Barracks',					400,			400,			-1,				-1],
 	['img/tiles/interactive-crimson-branch.svg',	'Misc',					'Crimson Branch',			800,			600,			-2,				-4],
 	['img/tiles/interactive-dueling-room.svg',		'Misc',					'Dueling Room',				400,			400,			-10,			-10],
