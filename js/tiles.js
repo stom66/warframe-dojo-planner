@@ -22,6 +22,7 @@ var tiles = [
 	['img/tiles/interactive-crimson-branch.svg',		'Misc',				'Crimson Branch',				800,			600,			-2,				-4],
 	['img/tiles/interactive-dueling-room.svg',			'Misc',				'Dueling Room',					400,			400,			-10,			-10],
 	['img/tiles/interactive-dry-dock.svg',				'Misc',				'Dry Dock',						3200,			3200,			-20,			-6],
+	['img/tiles/misc-entrati-chamber.svg',				'Misc',				'Entrati Audience Chamber',		800,			800,			200,			-2],
 	['img/tiles/misc-garden-large.svg',					'Misc',				'Garden - Large',				800,			800,			-15,			-8],
 	['img/tiles/misc-garden-small.svg',					'Misc',				'Garden - Small',				400,			400,			-10,			-6],
 	['img/tiles/misc-observatory.svg',					'Misc',				'Observatory',					1200,			1920,			-2,				-5],
