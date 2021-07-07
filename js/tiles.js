@@ -29,5 +29,6 @@ var tiles = [
 	['img/tiles/interactive-obstacle-course.svg',		'Misc',				'Obstacle Course',				2000,			2320,			-10,			-10],
 	['img/tiles/interactive-obstacle-architect.svg',	'Misc',				'Obstacle Course Architect',	2000,			2000,			0,				-2],
 	['img/tiles/utility-reactor.svg',					'Misc',				'Reactor',						400,			400,			-5,				25],
+	['img/tiles/misc-starlight-market.svg',				'Misc',				'Starlight Market',				800,			800,			200,			-5],
 	['img/tiles/misc-temple-of-honor.svg',				'Misc',				'Temple of Honor',				800,			800,			-2,				-5]
 ];
