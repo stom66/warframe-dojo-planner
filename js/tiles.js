@@ -25,6 +25,7 @@ var tiles = [
 	['img/tiles/misc-entrati-chamber.svg',				'Misc',				'Entrati Audience Chamber',		800,			800,			200,			-2],
 	['img/tiles/misc-garden-large.svg',					'Misc',				'Garden - Large',				800,			800,			-15,			-8],
 	['img/tiles/misc-garden-small.svg',					'Misc',				'Garden - Small',				400,			400,			-10,			-6],
+	['img/tiles/misc-infested-chamber.svg',				'Misc',				'Infested Chamber',				800,			800,			200,			-5],
 	['img/tiles/misc-observatory.svg',					'Misc',				'Observatory',					1200,			1920,			-2,				-5],
 	['img/tiles/interactive-obstacle-course.svg',		'Misc',				'Obstacle Course',				2000,			2320,			-10,			-10],
 	['img/tiles/interactive-obstacle-architect.svg',	'Misc',				'Obstacle Course Architect',	2000,			2000,			0,				-2],
